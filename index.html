@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MD Al Amin Islam</title>
+    <!-- Tailwind CSS and DaisyUi cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font Awesome cdn -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- tailwind customize -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Text: "#050716",
+              Background: "#f7f7fd",
+              Primary: "#334dd2",
+              Secondary: "#d091e7",
+              Accent: "#d95fdc",
+            },
+            fontFamily: {
+              inter: "Inter",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter">
+    <header class="">
+      <!-- navbar style -->
+      <nav class="w-11/12 mx-auto my-4">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="flex gap-2 items-center">
+              <img class="h-9" src="./assest/logo.png" alt="" />
+              <h3 class="text-2xl font-bold">Al Amin</h3>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="flex justify-center gap-16 cursor-pointer">
+              <li class="hover:text-Accent hover:font-semibold">
+                <a>Home</a>
+              </li>
+              <li class="hover:text-Accent hover:font-semibold">
+                <a>About</a>
+              </li>
+              <li class="hover:text-Accent hover:font-semibold">
+                <a>Experience</a>
+              </li>
+              <li class="hover:text-Accent hover:font-semibold">
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="dropdown dropdown-left hidden md:block">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn m-1 tracking-widest font-bold text-[#212121] hover:bg-Accent hover:text-white px-10 text-lg border-2 border-Secondary shadow-lg shadow-Secondary hover:border-Accent"
+              >
+                Hire Me
+              </div>
+              <form
+                tabindex="0"
+                class="dropdown-content menu bg-Secondary rounded-box z-[1] flex flex-col gap-4 p-6 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_5px_5px_15px_1px_#d95fdc]"
+              >
+                <input
+                  class="text-Text p-2 rounded-lg outline-Accent"
+                  type="text"
+                  placeholder="Your Name"
+                />
+                <input
+                  class="text-Text p-2 rounded-lg outline-Accent"
+                  type="email"
+                  placeholder="Your Email"
+                />
+                <button
+                  type="submit"
+                  class="bg-Primary text-white p-2 rounded-lg text-lg"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-sharp fa-regular fa-bars text-xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content right-0 bg-Accent rounded-box z-[1] mt-3 w-44 gap-4 p-2 shadow-lg"
+              >
+                <li class="text-white">
+                  <a>Home</a>
+                </li>
+                <li class="text-white">
+                  <a>About</a>
+                </li>
+                <li class="text-white">
+                  <a>Experience</a>
+                </li>
+                <li class="text-white">
+                  <a>Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner Section -->
+      <section></section>
+      <div></div>
+    </header>
+  </body>
+</html>
