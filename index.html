@@ -76,7 +76,9 @@
         <div class="navbar p-0">
           <div class="navbar-start">
             <div class="flex gap-2 items-center">
-              <img class="h-9" src="./asset/logo.png" alt="" />
+              <a href="#Home"
+                ><img class="h-12" src="./asset/logo.png" alt=""
+              /></a>
             </div>
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -96,17 +98,17 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <div class="dropdown dropdown-left hidden md:block">
+            <div class="dropdown md:dropdown-left dropdown-bottom">
               <div
                 tabindex="0"
                 role="button"
-                class="btn m-1 tracking-widest font-bold text-[#212121] hover:bg-Accent hover:text-white px-10 text-lg border-2 border-Secondary hover:shadow-[1px_3px_10px_1px_#d091e7] hover:border-Accent"
+                class="btn m-1 tracking-widest font-bold text-[#212121] hover:bg-Accent hover:text-white md:px-10 px-2 w-32 md:w-full md:text-lg text-base border-2 border-Secondary hover:shadow-[1px_3px_10px_1px_#d091e7] hover:border-Accent"
               >
                 Hire Me
               </div>
               <form
                 tabindex="0"
-                class="dropdown-content menu bg-Secondary rounded-box z-40 flex flex-col gap-4 p-6 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_5px_5px_15px_1px_#d091e7]"
+                class="dropdown-content right-0 menu bg-Secondary rounded-box z-40 flex flex-col gap-4 p-6 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_5px_5px_15px_1px_#d091e7]"
               >
                 <input
                   class="text-Text p-2 rounded-lg outline-Accent"
@@ -152,7 +154,6 @@
         </div>
       </nav>
       <!-- Banner Section -->
-      <br />
       <section
         style="
           background-image: url(./asset/backimg.png);
@@ -160,34 +161,119 @@
           background-size: cover;
           border-radius: 20px;
         "
-        class="grid lg:grid-cols-5 grid-cols-1 items-center gap-6 pt-6"
+        class="grid lg:grid-cols-2 grid-cols-1 items-center md:mt-12 md:pt-8"
       >
         <!--Banner title  -->
-        <div class="space-y-5 lg:pl-12 lg:col-span-3 p-5">
-          <h3 class="lg:text-4xl text-3xl font-semibold">Hello!</h3>
-          <h2 class="lg:text-4xl text-2xl font-semibold">
+        <div class="space-y-5 lg:pl-12 p-5">
+          <h3 class="lg:text-4xl md:text-3xl text-2xl font-semibold">Hello!</h3>
+          <h2 class="lg:text-3xl md:text-2xl text-xl font-semibold">
             My name is <span class="text-Primary">Al Amin Islam</span>
           </h2>
-          <h1 class="lg:text-6xl text-4xl font-bold">
+          <h1 class="lg:text-6xl md:text-4xl text-3xl font-bold">
             I am a junior <br />
             <span class="text-Accent font-bold">Web Developer</span>
           </h1>
-          <p class="text-[#494949] text-sm">
+          <p class="text-[#494949] text-sm lg:w-10/12">
             My path to becoming a web developer is a long one, and I’m
             constantly seeking to learn and explore new things.
           </p>
           <div
-            class="w-56 tracking-widest font-bold text-white bg-Accent hover:bg-Secondary hover:text-Text text-center py-4 rounded-lg text-lg border border-Secondary hover:shadow-[1px_3px_10px_1px_#d091e7] hover:border-Accent"
+            class="md:w-52 w-40 tracking-widest font-bold text-white bg-Accent hover:bg-Secondary hover:text-Text text-center py-3 rounded-lg md:text-lg border border-Secondary hover:shadow-[1px_3px_10px_1px_#d091e7] hover:border-Accent"
           >
             Download CV
           </div>
         </div>
         <!-- Banner image -->
-        <div class="lg:col-span-2 mx-auto">
-          <img class="" src="./asset/myimg.png" alt="MY Image" />
+        <div class="mx-auto">
+          <img class="bottom-0" src="./asset/myimg.png" alt="MY Image" />
         </div>
       </section>
     </header>
-    <main></main>
+    <br />
+    <main>
+      <!--  -->
+      <section
+        class="w-11/12 mx-auto my-8 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6"
+      >
+        <div
+          class="space-y-2 hover:bg-[#faa37a] hover:text-black rounded-lg p-6 shadow border"
+        >
+          <img src="./asset/html.png" alt="" />
+          <h3 class="md:text-2xl text-xl font-extrabold">HTML</h3>
+          <p class="text-[#494949]">
+            HTML, or HyperText Markup Language, is the standard language used to
+            create and structure content on the web.
+          </p>
+          <a href="" class="md:text-xl font-bold cursor-pointer text-center"
+            >Read More <i class="fa-regular fa-chevrons-right"></i
+          ></a>
+        </div>
+        <div
+          class="space-y-2 hover:bg-[#faa37a] hover:text-black rounded-lg p-6 shadow border"
+        >
+          <img src="./asset/html.png" alt="" />
+          <h3 class="md:text-2xl text-xl font-extrabold">HTML</h3>
+          <p class="text-[#494949]">
+            HTML, or HyperText Markup Language, is the standard language used to
+            create and structure content on the web.
+          </p>
+          <a href="" class="md:text-xl font-bold cursor-pointer text-center"
+            >Read More <i class="fa-regular fa-chevrons-right"></i
+          ></a>
+        </div>
+        <div
+          class="space-y-2 hover:bg-[#faa37a] hover:text-black rounded-lg p-6 shadow border"
+        >
+          <img src="./asset/html.png" alt="" />
+          <h3 class="md:text-2xl text-xl font-extrabold">HTML</h3>
+          <p class="text-[#494949]">
+            HTML, or HyperText Markup Language, is the standard language used to
+            create and structure content on the web.
+          </p>
+          <a href="" class="md:text-xl font-bold cursor-pointer text-center"
+            >Read More <i class="fa-regular fa-chevrons-right"></i
+          ></a>
+        </div>
+        <div
+          class="space-y-2 hover:bg-[#faa37a] hover:text-black rounded-lg p-6 shadow border"
+        >
+          <img src="./asset/html.png" alt="" />
+          <h3 class="md:text-2xl text-xl font-extrabold">HTML</h3>
+          <p class="text-[#494949]">
+            HTML, or HyperText Markup Language, is the standard language used to
+            create and structure content on the web.
+          </p>
+          <a href="" class="md:text-xl font-bold cursor-pointer text-center"
+            >Read More <i class="fa-regular fa-chevrons-right"></i
+          ></a>
+        </div>
+        <div
+          class="space-y-2 hover:bg-[#faa37a] hover:text-black rounded-lg p-6 shadow border"
+        >
+          <img src="./asset/html.png" alt="" />
+          <h3 class="md:text-2xl text-xl font-extrabold">HTML</h3>
+          <p class="text-[#494949]">
+            HTML, or HyperText Markup Language, is the standard language used to
+            create and structure content on the web.
+          </p>
+          <a href="" class="md:text-xl font-bold cursor-pointer text-center"
+            >Read More <i class="fa-regular fa-chevrons-right"></i
+          ></a>
+        </div>
+        <div
+          class="space-y-2 hover:bg-[#faa37a] hover:text-black rounded-lg p-6 shadow border"
+        >
+          <img src="./asset/html.png" alt="" />
+          <h3 class="md:text-2xl text-xl font-extrabold">HTML</h3>
+          <p class="text-[#494949]">
+            HTML, or HyperText Markup Language, is the standard language used to
+            create and structure content on the web.
+          </p>
+          <a href="" class="md:text-xl font-bold cursor-pointer text-center"
+            >Read More <i class="fa-regular fa-chevrons-right"></i
+          ></a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
