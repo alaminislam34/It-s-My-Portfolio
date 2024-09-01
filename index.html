@@ -77,35 +77,44 @@
           <div class="navbar-start">
             <div class="flex gap-2 items-center">
               <a href="#Home"
-                ><img class="h-12" src="./asset/logo.png" alt=""
+                ><img class="h-12" src="./asset/mylogo.png" alt=""
               /></a>
             </div>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="flex justify-center gap-16 cursor-pointer">
-              <li class="hover:text-Accent hover:font-semibold">
+              <li class="hover:text-primary hover:font-semibold">
                 <a href="#Home">Home</a>
               </li>
-              <li class="hover:text-Accent hover:font-semibold">
+              <li class="hover:text-primary hover:font-semibold">
                 <a href="#skills">Skills</a>
               </li>
-              <li class="hover:text-Accent hover:font-semibold">
+              <li class="hover:text-primary hover:font-semibold">
                 <a href="#projects">Project</a>
               </li>
-              <li class="hover:text-Accent hover:font-semibold">
+              <li class="hover:text-primary hover:font-semibold">
+                <a href="#experience">Experience</a>
+              </li>
+              <li class="hover:text-primary hover:font-semibold">
                 <a>Contact</a>
               </li>
             </ul>
           </div>
           <div class="navbar-end">
             <div class="dropdown md:dropdown-left dropdown-bottom">
-              <div
+              <button
                 tabindex="0"
                 role="button"
-                class="btn m-1 tracking-widest font-bold text-[#212121] hover:bg-Accent hover:text-white md:px-10 px-2 w-32 md:w-full md:text-lg text-base border-2 border-Secondary hover:shadow-[1px_3px_10px_1px_#d091e7] hover:border-Accent"
+                class="btn relative inline-flex items-center justify-center overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-transparent group w-32"
               >
-                Hire Me
-              </div>
+                <span
+                  class="w-56 h-48 rounded bg-indigo-600 absolute bottom-0 left-0 translate-x-full ease-in-out duration-1000 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
+                ></span>
+                <span
+                  class="relative w-full text-center font-bold tracking-wider text-lg text-indigo-600 transition-colors duration-300 ease-in group-hover:text-white"
+                  >Hire Me</span
+                >
+              </button>
               <form
                 tabindex="0"
                 class="dropdown-content right-0 menu bg-Secondary rounded-box z-40 flex flex-col gap-4 p-6 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_5px_5px_15px_1px_#d091e7]"
@@ -146,6 +155,9 @@
                   <a>Project</a>
                 </li>
                 <li class="text-white">
+                  <a>Experience</a>
+                </li>
+                <li class="text-white">
                   <a>Contact</a>
                 </li>
               </ul>
@@ -160,39 +172,41 @@
         <a href="#Home"><i class="fa-light fa-up text-3xl"></i></a>
       </div>
       <section
-        style="
-          background-image: url(./asset/backimg.png);
-          background-position: center;
-          background-size: cover;
-          border-radius: 10px;
-        "
         class="grid lg:grid-cols-2 grid-cols-1 items-center md:mt-12 md:pt-8"
       >
         <!--Banner title  -->
         <div class="space-y-5 lg:pl-12 p-5">
           <h3 class="lg:text-4xl md:text-3xl text-2xl font-semibold">Hello!</h3>
           <h2 class="lg:text-3xl md:text-2xl text-xl font-semibold">
-            My name is <span class="text-Primary">Al Amin Islam</span>
+            My name is <span class="font-bold">Al Amin Islam.</span>
           </h2>
           <h1 class="lg:text-6xl md:text-4xl text-3xl font-bold">
-            I am a junior <br />
+            I'm a junior <br />
             <span class="text-Accent font-bold">Web Developer</span>
           </h1>
           <p class="text-[#494949] text-sm lg:w-10/12">
             My path to becoming a web developer is a long one, and I’m
             constantly seeking to learn and explore new things.
           </p>
-          <div
-            class="md:w-52 w-40 tracking-widest font-bold text-white bg-Accent hover:bg-Secondary hover:text-Text text-center py-3 rounded-lg md:text-lg border border-Secondary hover:shadow-[1px_3px_10px_1px_#d091e7] hover:border-Accent"
+          <button
+            class="btn relative inline-flex items-center justify-center overflow-hidden font-medium transition-all bg-transparent backdrop-blur-lg border-indigo-500 rounded hover:bg-transparent group h-16 w-52"
           >
-            <a href="./asset/cv.pdf" download=""
-              >Download <span class="text-red-500">CV</span></a
+            <span
+              class="w-56 h-48 rounded bg-[#d95fdc] absolute bottom-0 left-0 translate-x-full ease-in-out duration-1000 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
+            ></span>
+            <span
+              class="relative w-full text-center text-[#212121] transition-colors duration-300 ease-in group-hover:text-white my-auto"
+              ><a
+                href="./asset/cv.pdf"
+                class="text-lg font-bold tracking-widest"
+                >Download CV</a
+              ></span
             >
-          </div>
+          </button>
         </div>
         <!-- Banner image -->
         <div class="mx-auto">
-          <img class="bottom-0" src="./asset/myimg.png" alt="MY Image" />
+          <img class="bottom-0" src="./image/image.png" alt="MY Image" />
         </div>
       </section>
     </header>
@@ -200,13 +214,22 @@
     <main>
       <!-- Skills Section -->
       <section class="w-11/12 mx-auto my-6" id="skills">
-        <div class="flex justify-center my-8 items-center gap-4">
-          <h3 class="text-center lg:text-4xl md:text-3xl text-2xl font-bold">
-            My Skills
-          </h3>
-          <img class="w-12" src="./asset/potential.png" alt="" />
+        <!-- Skill title -->
+        <div class="flex flex-col justify-center my-6 items-center gap-4">
+          <div class="flex justify-center items-center my-6">
+            <h3 class="text-center lg:text-4xl md:text-3xl text-2xl font-bold">
+              My Skills
+            </h3>
+            <img class="w-12" src="./asset/potential.png" alt="" />
+          </div>
+          <p class="text-[#494949] lg:w-7/12 text-center mx-auto">
+            My diverse skill set in web development includes proficiency in
+            front-end and back-end technologies, problem-solving, and a strong
+            focus on user-centric design.
+          </p>
         </div>
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+          <!-- first card -->
           <div
             class="space-y-2 hover:bg-[#faa37a] hover:text-black rounded-lg p-6 shadow border"
           >
@@ -221,6 +244,7 @@
               >Read More <i class="fa-regular fa-chevrons-right"></i
             ></a>
           </div>
+          <!-- second card -->
           <div
             class="space-y-2 hover:bg-blue-400 hover:text-black rounded-lg p-6 shadow border"
           >
@@ -235,6 +259,7 @@
               >Read More <i class="fa-regular fa-chevrons-right"></i
             ></a>
           </div>
+          <!-- third card -->
           <div
             class="space-y-2 hover:bg-yellow-300 hover:text-black rounded-lg p-6 shadow border"
           >
@@ -249,6 +274,7 @@
               >Read More <i class="fa-regular fa-chevrons-right"></i
             ></a>
           </div>
+          <!-- fourth card -->
           <div
             class="space-y-2 hover:bg-blue-300 hover:text-black rounded-lg p-6 shadow border"
           >
@@ -263,6 +289,7 @@
               >Read More <i class="fa-regular fa-chevrons-right"></i
             ></a>
           </div>
+          <!-- fifth card -->
           <div
             class="space-y-2 hover:bg-[#4A7B58] hover:text-black rounded-lg p-6 shadow border"
           >
@@ -276,6 +303,7 @@
               >Read More <i class="fa-regular fa-chevrons-right"></i
             ></a>
           </div>
+          <!-- sixth card -->
           <div
             class="space-y-2 hover:bg-green-500 hover:text-black rounded-lg p-6 shadow border"
           >
@@ -283,8 +311,7 @@
             <h3 class="md:text-2xl text-xl font-extrabold">MongoDB</h3>
             <p class="text-[#494949]">
               MongoDB is a popular NoSQL database that provides a flexible,
-              scalable, and high-performance solution for storing and managing
-              data.
+              scalable, and high-performance solution.
             </p>
             <a href="" class="md:text-xl font-bold cursor-pointer text-center"
               >Read More <i class="fa-regular fa-chevrons-right"></i
@@ -293,23 +320,67 @@
         </div>
       </section>
       <br />
+      <!-- projects -->
+      <section class="w-11/12 mx-auto">
+        <div class="carousel">
+          <div id="item1" class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+              class="w-full"
+            />
+          </div>
+          <div id="item2" class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+              class="w-full"
+            />
+          </div>
+          <div id="item3" class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+              class="w-full"
+            />
+          </div>
+          <div id="item4" class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+              class="w-full"
+            />
+          </div>
+        </div>
+        <div class="flex w-full justify-center gap-2 py-2">
+          <a href="#item1" class="btn btn-xs">1</a>
+          <a href="#item2" class="btn btn-xs">2</a>
+          <a href="#item3" class="btn btn-xs">3</a>
+          <a href="#item4" class="btn btn-xs">4</a>
+        </div>
+      </section>
       <!-- My Projects Section -->
       <section class="w-11/12 mx-auto my-6" id="projects">
         <div>
           <div class="flex justify-center gap-4 items-center my-8">
-            <h3
-              class="lg:text-4xl md:text-3xl text-2xl font-bold my-8 text-center"
-            >
-              My Projects
-            </h3>
-            <img class="w-12" src="./asset/projects.png" alt="" />
+            <div class="my-6">
+              <div class="flex items-center justify-center">
+                <h3
+                  class="lg:text-4xl md:text-3xl text-2xl font-bold my-6 text-center"
+                >
+                  My Projects
+                </h3>
+                <img class="w-12" src="./asset/projects.png" alt="" />
+              </div>
+              <p class="text-[#494949] lg:w-7/12 mx-auto text-center">
+                My projects demonstrate my skills in web development, featuring
+                innovative solutions, real-world applications, and a passion for
+                creating functional designs.
+              </p>
+            </div>
           </div>
           <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
             <!-- first projects -->
             <div class="card shadow-xl border bg-[#EBD3F8]">
               <figure>
                 <img
-                  class="rounded-2xl w-full"
+                  class="rounded-t-sm w-full"
                   src="./asset/firstp.png"
                   alt="Project"
                 />
@@ -334,7 +405,7 @@
             <div class="card shadow-xl border bg-[#EBD3F8]">
               <figure>
                 <img
-                  class="rounded-2xl w-full"
+                  class="rounded-t-sm w-full"
                   src="./asset/Secondp.png"
                   alt="Project"
                 />
@@ -359,8 +430,8 @@
             <div class="card shadow-xl border bg-[#EBD3F8]">
               <figure>
                 <img
-                  class="rounded-2xl w-full"
-                  src="./asset/third.png"
+                  class="rounded-t-sm w-full"
+                  src="./asset/projectss.png"
                   alt="Project"
                 />
               </figure>
@@ -374,7 +445,7 @@
                 <div class="card-actions">
                   <a
                     class="text-xl text-red-600 font-semibold pb-2 hover:underline"
-                    href="https://alaminislam34.github.io/It-s-My-Portfolio/"
+                    href="https://alaminislam34.github.io/web-dev-portfolio/"
                     ><i class="fa-regular fa-link"></i> Live Demo</a
                   >
                 </div>
@@ -382,7 +453,11 @@
             </div>
             <!-- Fourth project -->
             <div class="card shadow-xl border bg-[#EBD3F8]">
-              <img class="w-full rounded-2xl" src="./asset/fourth.png" alt="" />
+              <img
+                class="w-full rounded-t-sm"
+                src="./asset/fourth.png"
+                alt=""
+              />
               <div class="space-y-4 p-6">
                 <h2 class="card-title">HTML and CSS</h2>
                 <p>
@@ -402,6 +477,133 @@
           </div>
         </div>
       </section>
+      <br /><br /><br />
+      <section></section>
+      <!-- My Experience Section -->
+      <section class="w-11/12 mx-auto">
+        <!-- title -->
+        <div class="my-6">
+          <div class="flex items-center justify-center gap-4">
+            <h2
+              class="lg:text-4xl md:text-3xl text-2xl font-bold my-6 text-center"
+            >
+              My Experience
+            </h2>
+            <img class="w-12" src="./asset/job.png" />
+          </div>
+          <p class="lg:w-7/12 mx-auto text-center">
+            My experience as a junior web developer showcases my growth,
+            hands-on projects, and commitment to learning, driving my career
+            forward.
+          </p>
+        </div>
+        <!-- experience card -->
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
+          <!-- card 1 -->
+          <div
+            class="flex justify-center items-center flex-col text-center md:p-12 p-0 shadow-stone-400 rounded-lg bg-gradient-to-r from-blue-200 to-cyan-200 hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border"
+          >
+            <div>
+              <img class="w-44" src="./asset/code.png" alt="" />
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-[#212121] lg:text-2xl text-lg font-bold">
+                HTML and CSS
+              </h3>
+              <p class="text-[#494949]">
+                My experience with HTML and CSS involves creating responsive,
+                user-friendly websites that are both visually appealing and
+                functional. I've developed skills in advanced layouts, CSS
+                animations, and cross-browser compatibility, ensuring seamless
+                experiences across all devices and platforms.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center flex-col text-center md:p-12 p-0 shadow-stone-400 rounded-lg bg-gradient-to-r from-blue-200 to-cyan-200 hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border"
+          >
+            <div>
+              <img class="w-44" src="./asset/code.png" alt="" />
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-[#212121] lg:text-2xl text-lg font-bold">
+                HTML and CSS
+              </h3>
+              <p class="text-[#494949]">
+                My experience with HTML and CSS involves creating responsive,
+                user-friendly websites that are both visually appealing and
+                functional. I've developed skills in advanced layouts, CSS
+                animations, and cross-browser compatibility, ensuring seamless
+                experiences across all devices and platforms.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center flex-col text-center md:p-12 p-0 shadow-stone-400 rounded-lg bg-gradient-to-r from-blue-200 to-cyan-200 hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border"
+          >
+            <div>
+              <img class="w-44" src="./asset/code.png" alt="" />
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-[#212121] lg:text-2xl text-lg font-bold">
+                HTML and CSS
+              </h3>
+              <p class="text-[#494949]">
+                My experience with HTML and CSS involves creating responsive,
+                user-friendly websites that are both visually appealing and
+                functional. I've developed skills in advanced layouts, CSS
+                animations, and cross-browser compatibility, ensuring seamless
+                experiences across all devices and platforms.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center flex-col text-center md:p-12 p-0 shadow-stone-400 rounded-lg bg-gradient-to-r from-blue-200 to-cyan-200 hover:shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border"
+          >
+            <div>
+              <img class="w-44" src="./asset/code.png" alt="" />
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-[#212121] lg:text-2xl text-lg font-bold">
+                HTML and CSS
+              </h3>
+              <p class="text-[#494949]">
+                My experience with HTML and CSS involves creating responsive,
+                user-friendly websites that are both visually appealing and
+                functional. I've developed skills in advanced layouts, CSS
+                animations, and cross-browser compatibility, ensuring seamless
+                experiences across all devices and platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br /><br />
+      </section>
+      <br /><br /><br /><br /><br /><br />
+
+      <div class="w-full relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div
+            class="w-full relative mx-auto h-auto overflow-hidden rounded-lg"
+          >
+            <img
+              src="https://pagedone.io/asset/uploads/1688031162.jpg"
+              alt="image"
+              class="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110"
+            />
+          </div>
+          <div
+            class="w-full relative mx-auto h-auto overflow-hidden rounded-lg"
+          >
+            <img
+              src="https://pagedone.io/asset/uploads/1688031162.jpg"
+              alt="image"
+              class="w-full h-auto relative z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100"
+            />
+          </div>
+        </div>
+      </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
