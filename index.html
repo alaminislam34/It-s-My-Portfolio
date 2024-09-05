@@ -78,8 +78,8 @@
     </script>
   </head>
   <body class="font-inter">
-    <nav class="sticky top-0 z-[120] bg-white py-2">
-      <div class="navbar bg-base-100 w-11/12 mx-auto">
+    <nav class="sticky top-0 z-[120] bg-[#E3AADD] py-1">
+      <div class="navbar bg-base-100 w-11/12 mx-auto bg-[#E3AADD]">
         <div class="flex-1">
           <a href="#Home"
             ><img class="h-12" src="./asset/mylogo.png" alt=""
@@ -88,32 +88,32 @@
         <div class="flex-none hidden lg:block">
           <ul class="flex flex-row gap-10 px-1">
             <li
-              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer font-semibold"
             >
               <a href="#Home">Home</a>
             </li>
             <li
-              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer font-semibold"
             >
               <a href="#about">About</a>
             </li>
             <li
-              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer font-semibold"
             >
               <a href="#skills">Skills</a>
             </li>
             <li
-              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer font-semibold"
             >
-              <a href="#projects">Project</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li
-              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer font-semibold"
             >
               <a href="#experience">Experience</a>
             </li>
             <li
-              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer font-semibold"
             >
               <a>Contact</a>
             </li>
@@ -135,7 +135,7 @@
               <a>Skill</a>
             </li>
             <li class="text-white">
-              <a>Project</a>
+              <a>Portfolio</a>
             </li>
             <li class="text-white">
               <a>Experience</a>
@@ -151,7 +151,7 @@
       <!-- Banner Section -->
       <section class="grid lg:grid-cols-2 grid-cols-1 items-center">
         <!--Banner title  -->
-        <div class="space-y-5 lg:pl-12 p-5">
+        <div class="space-y-5 lg:pl-12 pt-12 md:pt-4">
           <div class="flex flex-col-reverse lg:flex-col gap-6">
             <div class="space-y-2 lg:space-y-4">
               <h2
@@ -169,7 +169,9 @@
               </h1>
             </div>
             <div>
-              <p class="text-[#494949] text-sm lg:w-10/12 tracking-widest">
+              <p
+                class="text-[#494949] text-sm lg:w-10/12 w-11/12 tracking-widest"
+              >
                 My path to becoming a web developer is a long one, and I’m
                 constantly seeking to learn and explore new things.
               </p>
@@ -178,7 +180,7 @@
           <button
             class="bg-gradient-to-r to-[#fd85ff] from-[#8196ff] lg:text-lg text-base font-semibold py-3 px-8 rounded-full text-white"
           >
-            <a href="" class="">Download CV</a>
+            <a href="./asset/cv.pdf" class="">Download CV</a>
           </button>
         </div>
         <!-- Banner image -->
@@ -208,7 +210,7 @@
         <div class="mx-auto">
           <img src="./image/Photolab-71900806-removebg-preview.png" alt="" />
         </div>
-        <div class="space-y-8">
+        <div class="space-y-8 py-6">
           <h3 class="lg:text-5xl text-3xl text-[Rufina] font-semibold">
             There Is All About Me
           </h3>
@@ -219,7 +221,7 @@
             something unique, and I’m committed to achieving excellence in
             everything I do.
           </p>
-          <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-6 py-8 lg:py-0">
             <div class="space-y-3">
               <h4 class="text-Rufina lg:text-3xl text-2xl text-pink-500">
                 Name
@@ -248,220 +250,281 @@
         </div>
       </section>
       <!-- Skills Section -->
-      <br /><br />
-      <section class="w-11/12 mx-auto my-6" id="skills">
+      <section class="bg-[#faffee] lg:py-14 py-12" id="skills">
         <!-- Skill title -->
-        <div class="flex flex-col justify-center my-6 items-center gap-4">
-          <div class="flex justify-center items-center my-6">
-            <h3
-              class="lg:text-5xl text-3xl text-[Rufina] font-semibold text-center"
+        <div class="w-11/12 mx-auto">
+          <div class="flex flex-col justify-center my-6 items-center gap-4">
+            <div class="flex justify-center items-center my-6">
+              <h3
+                class="lg:text-5xl text-3xl text-[Rufina] font-semibold text-center"
+              >
+                What I Do
+              </h3>
+              <img class="w-12" src="./asset/potential.png" alt="" />
+            </div>
+          </div>
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+            <!-- first card -->
+            <div
+              class="space-y-2 text-center p-6 border border-white hover:border-pink-400 bg-[#FFFFFF]"
             >
-              What I Do
-            </h3>
-            <img class="w-12" src="./asset/potential.png" alt="" />
-          </div>
-        </div>
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
-          <!-- first card -->
-          <div
-            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
-          >
-            <img class="mx-auto" src="./image/per_port_ser.jpg" alt="" />
-            <h3 class="md:text-3xl text-xl">Web Design</h3>
-            <p class="text-[#494949]">
-              Web development involves designing, creating, and maintaining
-              websites. It combines coding, creativity, and user experience to
-              build functional, dynamic sites.
-            </p>
-          </div>
-          <!-- second card -->
-          <div
-            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
-          >
-            <img class="mx-auto" src="./image/pr_port_ser2.png" alt="" />
-            <h3 class="md:text-3xl text-xl">Photography</h3>
-            <p class="text-[#494949]">
-              Web development involves designing, creating, and maintaining
-              websites. It combines coding, creativity, and user experience to
-              build functional, dynamic sites.
-            </p>
-          </div>
-          <!-- card 3 -->
-          <div
-            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
-          >
-            <img class="mx-auto" src="./image/pr_port_ser3.png" alt="" />
-            <h3 class="md:text-3xl text-xl">Video Editing</h3>
-            <p class="text-[#494949]">
-              Web development involves designing, creating, and maintaining
-              websites. It combines coding, creativity, and user experience to
-              build functional, dynamic sites.
-            </p>
-          </div>
-          <!-- card 4 -->
-          <div
-            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
-          >
-            <img class="mx-auto" src="./image/pr_port_ser5.png" alt="" />
-            <h3 class="md:text-3xl text-xl">Content Writing</h3>
-            <p class="text-[#494949]">
-              Web development involves designing, creating, and maintaining
-              websites. It combines coding, creativity, and user experience to
-              build functional, dynamic sites.
-            </p>
-          </div>
-          <!-- card 5 -->
-          <div
-            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
-          >
-            <img class="mx-auto" src="./image/pr_port_ser6.png" alt="" />
-            <h3 class="md:text-3xl text-xl">Digital Marketing</h3>
-            <p class="text-[#494949]">
-              Web development involves designing, creating, and maintaining
-              websites. It combines coding, creativity, and user experience to
-              build functional, dynamic sites.
-            </p>
-          </div>
-          <!-- card 6 -->
-          <div
-            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
-          >
-            <img class="mx-auto" src="./image/pr_port_ser4.png" alt="" />
-            <h3 class="md:text-3xl text-xl">Web Develop</h3>
-            <p class="text-[#494949]">
-              Web development involves designing, creating, and maintaining
-              websites. It combines coding, creativity, and user experience to
-              build functional, dynamic sites.
-            </p>
-          </div>
-        </div>
-      </section>
-      <br />
-      <!--  -->
-      <!-- My Projects Section -->
-      <section class="w-11/12 mx-auto my-6" id="projects">
-        <div>
-          <div class="flex justify-center gap-4 items-center my-8">
-            <div class="my-6">
-              <div class="flex items-center justify-center">
-                <h3
-                  class="lg:text-4xl md:text-3xl text-2xl font-bold my-6 text-center"
-                >
-                  My Projects
-                </h3>
-                <img class="w-12" src="./asset/projects.png" alt="" />
-              </div>
-              <p class="text-[#494949] lg:w-7/12 mx-auto text-center">
-                My projects demonstrate my skills in web development, featuring
-                innovative solutions, real-world applications, and a passion for
-                creating functional designs.
+              <img class="mx-auto" src="./image/per_port_ser.jpg" alt="" />
+              <h3 class="md:text-3xl text-xl">Web Design</h3>
+              <p class="text-[#494949]">
+                Web development involves designing, creating, and maintaining
+                websites. It combines coding, creativity, and user experience to
+                build functional, dynamic sites.
+              </p>
+            </div>
+            <!-- second card -->
+            <div
+              class="space-y-2 text-center p-6 border border-white hover:border-pink-400 bg-[#FFFFFF]"
+            >
+              <img class="mx-auto" src="./image/pr_port_ser2.png" alt="" />
+              <h3 class="md:text-3xl text-xl">Photography</h3>
+              <p class="text-[#494949]">
+                Web development involves designing, creating, and maintaining
+                websites. It combines coding, creativity, and user experience to
+                build functional, dynamic sites.
+              </p>
+            </div>
+            <!-- card 3 -->
+            <div
+              class="space-y-2 text-center p-6 border border-white hover:border-pink-400 bg-[#FFFFFF]"
+            >
+              <img class="mx-auto" src="./image/pr_port_ser3.png" alt="" />
+              <h3 class="md:text-3xl text-xl">Video Editing</h3>
+              <p class="text-[#494949]">
+                Web development involves designing, creating, and maintaining
+                websites. It combines coding, creativity, and user experience to
+                build functional, dynamic sites.
+              </p>
+            </div>
+            <!-- card 4 -->
+            <div
+              class="space-y-2 text-center p-6 border border-white hover:border-pink-400 bg-[#FFFFFF]"
+            >
+              <img class="mx-auto" src="./image/pr_port_ser5.png" alt="" />
+              <h3 class="md:text-3xl text-xl">Content Writing</h3>
+              <p class="text-[#494949]">
+                Web development involves designing, creating, and maintaining
+                websites. It combines coding, creativity, and user experience to
+                build functional, dynamic sites.
+              </p>
+            </div>
+            <!-- card 5 -->
+            <div
+              class="space-y-2 text-center p-6 border border-white hover:border-pink-400 bg-[#FFFFFF]"
+            >
+              <img class="mx-auto" src="./image/pr_port_ser6.png" alt="" />
+              <h3 class="md:text-3xl text-xl">Digital Marketing</h3>
+              <p class="text-[#494949]">
+                Web development involves designing, creating, and maintaining
+                websites. It combines coding, creativity, and user experience to
+                build functional, dynamic sites.
+              </p>
+            </div>
+            <!-- card 6 -->
+            <div
+              class="space-y-2 text-center p-6 border border-white hover:border-pink-400 bg-[#FFFFFF]"
+            >
+              <img class="mx-auto" src="./image/pr_port_ser4.png" alt="" />
+              <h3 class="md:text-3xl text-xl">Web Develop</h3>
+              <p class="text-[#494949]">
+                Web development involves designing, creating, and maintaining
+                websites. It combines coding, creativity, and user experience to
+                build functional, dynamic sites.
               </p>
             </div>
           </div>
-          <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
-            <!-- first projects -->
-            <div class="card shadow-xl border bg-[#EBD3F8]">
-              <figure>
-                <img
-                  class="rounded-t-sm w-full"
-                  src="./asset/firstp.png"
-                  alt="Project"
-                />
-              </figure>
-              <div class="space-y-4 p-6">
-                <h2 class="card-title">HTML and CSS</h2>
-                <p>
-                  This project is entirely crafted with pure HTML and custom
-                  CSS, showcasing a clean, minimalist design without using any
-                  frameworks.
-                </p>
-                <div class="card-actions">
-                  <a
-                    class="text-xl text-red-600 font-semibold pb-2 hover:underline"
-                    href="https://alaminislam34.github.io/I/"
-                    ><i class="fa-regular fa-link"></i> Live Demo
-                  </a>
+        </div>
+        <br /><br /><br />
+        <div
+          style="
+            background-image: url(./image/any.png);
+            background-size: cover;
+            background-position: center;
+            opacity: 70%;
+          "
+          class="text-center h-[300px] flex flex-col items-center justify-center"
+        >
+          <div class="">
+            <h3 class="lg:text-4xl text-2xl font-bold text-black">
+              Any Projects On Your Mind.
+            </h3>
+            <br />
+            <div>
+              <div class="dropdown md:dropdown-left dropdown-top dropdown-end">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="text-white text-xl bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2"
+                >
+                  Hire Me Now
                 </div>
-              </div>
-            </div>
-            <!-- Second project -->
-            <div class="card shadow-xl border bg-[#EBD3F8]">
-              <figure>
-                <img
-                  class="rounded-t-sm w-full"
-                  src="./asset/Secondp.png"
-                  alt="Project"
-                />
-              </figure>
-              <div class="space-y-4 p-6">
-                <h2 class="card-title">HTML and Tailwind CSS</h2>
-                <p>
-                  This project is entirely crafted with pure HTML and custom
-                  CSS, showcasing a clean, minimalist design without using any
-                  frameworks.
-                </p>
-                <div class="card-actions">
-                  <a
-                    class="text-xl text-red-600 font-semibold pb-2 hover:underline"
-                    href="https://alaminislam34.github.io/Tea-House-with-Tailwind/"
-                    ><i class="fa-regular fa-link"></i> Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Third project -->
-            <div class="card shadow-xl border bg-[#EBD3F8]">
-              <figure>
-                <img
-                  class="rounded-t-sm w-full"
-                  src="./asset/projectss.png"
-                  alt="Project"
-                />
-              </figure>
-              <div class="space-y-4 p-6">
-                <h2 class="card-title">HTML and Tailwind CSS</h2>
-                <p>
-                  This project is entirely crafted with pure HTML and custom
-                  CSS, showcasing a clean, minimalist design without using any
-                  frameworks.
-                </p>
-                <div class="card-actions">
-                  <a
-                    class="text-xl text-red-600 font-semibold pb-2 hover:underline"
-                    href="https://alaminislam34.github.io/web-dev-portfolio/"
-                    ><i class="fa-regular fa-link"></i> Live Demo</a
+                <br />
+                <form
+                  tabindex="0"
+                  class="dropdown-content menu rounded-box z-[1] w-56 p-6 shadow gap-2 bg-pink-500 opacity-35 text-left"
+                >
+                  <label for="name" class="w-full text-white"
+                    >Your name
+                    <input
+                      placeholder="Name"
+                      class="p-2 rounded-lg outline-pink-300 mt-1"
+                      type="text"
+                    />
+                  </label>
+                  <label for="email" class="w-full text-white"
+                    >Your Email
+                    <input
+                      placeholder="Email"
+                      class="p-2 rounded-lg outline-pink-300 mt-1"
+                      type="email"
+                    />
+                  </label>
+                  <button
+                    type="submit"
+                    class="bg-white text-black font-semibold py-2 mt-4 rounded-lg"
                   >
-                </div>
-              </div>
-            </div>
-            <!-- Fourth project -->
-            <div class="card shadow-xl border bg-[#EBD3F8]">
-              <img
-                class="w-full rounded-t-sm"
-                src="./asset/fourth.png"
-                alt=""
-              />
-              <div class="space-y-4 p-6">
-                <h2 class="card-title">HTML and CSS</h2>
-                <p>
-                  This project is entirely crafted with pure HTML and custom
-                  CSS, showcasing a clean, minimalist design without using any
-                  frameworks.
-                </p>
-                <div class="card-actions">
-                  <a
-                    class="text-xl text-red-600 font-semibold pb-2 hover:underline"
-                    href="https://alaminislam34.github.io/Ecommerce-Organic-Food-Website/"
-                    ><i class="fa-regular fa-link"></i> Live Demo</a
-                  >
-                </div>
+                    Send Mail
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <br /><br /><br />
-      <section></section>
+
+      <!--Portfolio section -->
+      <section class="bg-[#faffee] lg:py-14 py-12" id="portfolio">
+        <h2
+          class="lg:text-5xl text-3xl text-[Rufina] font-semibold text-center pb-8 lg:pb-12"
+        >
+          Portfolio
+        </h2>
+        <div
+          class="grid lg:grid-cols-2 grid-cols-1 gap-10 w-11/12 mx-auto my-6"
+        >
+          <!-- portfolio 1 -->
+          <div class="relative overflow-hidden rounded-lg">
+            <img
+              class="hover:scale-110 object-cover w-full h-full transition-all duration-500"
+              src="./asset/firstp.png"
+              alt=""
+            />
+            <a
+              href="https://alaminislam34.github.io/Practice-Website-1/"
+              class="text-[#EEE9E3] p-2 bg-[#EF476F] text-center absolute bottom-4 left-5 rounded-lg font-bold hover:underline"
+              >Live Preview</a
+            >
+          </div>
+          <!-- portfolio 2 -->
+          <div class="relative overflow-hidden rounded-lg">
+            <img
+              class="hover:scale-110 object-cover w-full h-full transition-all duration-500"
+              src="./asset/assignment3.png"
+              alt=""
+            />
+            <a
+              href="https://alaminislam34.github.io/Assignment-3/"
+              class="text-[#EEE9E3] p-2 bg-[#EF476F] text-center absolute bottom-4 left-5 rounded-lg font-bold hover:underline"
+              >Live Preview</a
+            >
+          </div>
+          <!-- portfolio 3 -->
+          <div class="relative overflow-hidden rounded-lg">
+            <img
+              class="hover:scale-110 object-cover w-full h-full transition-all duration-500"
+              src="./asset/assignment2.png"
+              alt=""
+            />
+            <a
+              href="https://alaminislam34.github.io/Assignment-2/"
+              class="text-[#EEE9E3] p-2 bg-[#EF476F] text-center absolute bottom-4 left-5 rounded-lg font-bold hover:underline"
+              >Live Preview</a
+            >
+          </div>
+          <!-- portfolio 4 -->
+          <div class="relative overflow-hidden rounded-lg">
+            <img
+              class="hover:scale-110 object-cover w-full h-full transition-all duration-500"
+              src="./asset/fourth.png"
+              alt=""
+            />
+            <a
+              href="https://alaminislam34.github.io/Ecommerce-Organic-Food-Website/"
+              class="text-[#EEE9E3] p-2 bg-[#EF476F] text-center absolute bottom-4 left-5 rounded-lg font-bold hover:underline"
+              >Live Preview</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- contact me -->
+      <section class="bg-[#faffee] lg:py-14 py-12">
+        <h2
+          class="lg:text-5xl text-3xl text-[Rufina] font-semibold text-center"
+        >
+          Contact Me
+        </h2>
+        <div class="space-y-6 w-11/12 mx-auto py-12">
+          <div class="flex lg:flex-row flex-col justify-around my-8 gap-8">
+            <!-- location -->
+            <div class="flex flex-col items-center justify-center space-y-4">
+              <img src="./image/pr_port_contact1.png" alt="" />
+              <h3 class="text-xl lg:text-2xl">Location</h3>
+              <p class="text-zinc-500 text-center">
+                Eastern Housing, K/19 R-n/1 <br />
+                B-K Mirpur, Dhaka
+              </p>
+            </div>
+            <!-- mail -->
+            <div class="flex flex-col items-center justify-center space-y-4">
+              <img src="./image/pr_port_contact2.png" alt="" />
+              <h3 class="text-xl lg:text-2xl">Email</h3>
+              <p class="text-zinc-500">alamin03040912@gmail.com</p>
+            </div>
+            <!-- Phone -->
+            <div class="flex flex-col items-center justify-center space-y-4">
+              <img src="./image/pr_port_contact3.png" alt="" />
+              <h3 class="text-xl lg:text-2xl">Phone</h3>
+              <p class="text-zinc-500">01821858917, 01929671795</p>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <!-- feedback section -->
+        <div class="text-center py-6">
+          <h4 class="lg:text-4xl md:text-3xl text-2xl">
+            Here's Your Feedback.
+          </h4>
+          <form
+            class="grid lg:grid-cols-2 grid-cols-1 gap-4 lg:w-8/12 w-11/12 mx-auto my-6"
+          >
+            <input
+              class="py-4 outline-Accent rounded-lg px-4 text-black"
+              type="text"
+              placeholder="Your Name"
+            />
+            <input
+              class="py-4 outline-Accent rounded-lg px-4 text-black"
+              type="email"
+              placeholder="Your Email"
+            />
+            <textarea
+              name="text"
+              class="text-black p-4 lg:col-span-2 outline-Accent rounded-lg"
+              placeholder="Let me know your opinion..."
+            ></textarea>
+            <button
+              class="py-4 px-4 rounded-lg bg-gradient-to-l from-[#f396e4] to-[#c997f8] hover:bg-gradient-to-t (from-[#c3c7f3 to-[#c8a8e9]) transition-all ease-in-out duration-500 text-black text-xl lg:col-span-2 font-bold"
+              type="submit"
+            >
+              Feedback
+            </button>
+          </form>
+        </div>
+      </section>
       <!-- My Experience Section -->
       <br />
       <div class="w-11/12 mx-auto relative">
@@ -541,40 +604,9 @@
       </div>
       <br /><br /><br />
     </main>
-    <footer class="bg-black text-white h-auto">
+    <footer class="bg-black text-white h-auto py-6">
       <!-- component -->
       <div class="w-11/12 mx-auto">
-        <!-- feedback section -->
-        <div class="text-center py-6">
-          <h4 class="lg:text-4xl md:text-3xl text-2xl">
-            Here's Your Feedback.
-          </h4>
-          <form
-            class="grid lg:grid-cols-2 grid-cols-1 gap-4 lg:w-8/12 w-11/12 mx-auto my-6"
-          >
-            <input
-              class="py-4 outline-Accent rounded-lg px-4 text-black"
-              type="text"
-              placeholder="Your Name"
-            />
-            <input
-              class="py-4 outline-Accent rounded-lg px-4 text-black"
-              type="email"
-              placeholder="Your Email"
-            />
-            <textarea
-              name="text"
-              class="text-black p-4 lg:col-span-2 outline-Accent rounded-lg"
-              placeholder="Let me know your opinion..."
-            ></textarea>
-            <button
-              class="py-4 px-4 rounded-lg bg-gradient-to-l from-[#c8a8e9] to-[#c3c7f3] hover:bg-gradient-to-r (from-[#c3c7f3 to-[#c8a8e9]) transition-all duration-300 text-black text-xl lg:col-span-2 font-bold"
-              type="submit"
-            >
-              Feedback
-            </button>
-          </form>
-        </div>
         <!-- contact section -->
         <div class="lg:w-8/12 mx-auto space-y-4">
           <h3 class="text-xl">Contact Me..</h3>
