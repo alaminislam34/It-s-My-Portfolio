@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <!-- font Awesome cdn -->
@@ -69,7 +69,7 @@
             },
             fontFamily: {
               inter: "Inter",
-              lora: "Lora",
+              Rufina: "Rufina",
               serif,
             },
           },
@@ -78,93 +78,105 @@
     </script>
   </head>
   <body class="font-inter">
-    <nav class="bg-white sticky top-0 z-[12000]">
-      <!-- navbar style -->
-      <nav class="lg:py-4 py-2 bg-white w-11/12 mx-auto">
-        <div class="navbar p-0">
-          <div class="navbar-start">
-            <div class="flex gap-2 items-center">
-              <a href="#Home"
-                ><img class="h-12" src="./asset/mylogo.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="flex justify-center gap-16 cursor-pointer">
-              <li class="hover:text-primary hover:font-semibold">
-                <a href="#Home">Home</a>
-              </li>
-              <li class="hover:text-primary hover:font-semibold">
-                <a href="#skills">Skills</a>
-              </li>
-              <li class="hover:text-primary hover:font-semibold">
-                <a href="#projects">Project</a>
-              </li>
-              <li class="hover:text-primary hover:font-semibold">
-                <a href="#experience">Experience</a>
-              </li>
-              <li class="hover:text-primary hover:font-semibold">
-                <a>Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <i class="fa-sharp fa-regular fa-bars text-xl"></i>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content right-0 bg-purple-700 rounded-box z-[1] mt-3 w-44 gap-4 px-2 py-3 shadow-lg"
-              >
-                <li class="text-white">
-                  <a>Home</a>
-                </li>
-                <li class="text-white">
-                  <a>Skill</a>
-                </li>
-                <li class="text-white">
-                  <a>Project</a>
-                </li>
-                <li class="text-white">
-                  <a>Experience</a>
-                </li>
-                <li class="text-white">
-                  <a>Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <nav class="sticky top-0 z-[120] bg-white py-2">
+      <div class="navbar bg-base-100 w-11/12 mx-auto">
+        <div class="flex-1">
+          <a href="#Home"
+            ><img class="h-12" src="./asset/mylogo.png" alt=""
+          /></a>
         </div>
-      </nav>
+        <div class="flex-none hidden lg:block">
+          <ul class="flex flex-row gap-10 px-1">
+            <li
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+            >
+              <a href="#Home">Home</a>
+            </li>
+            <li
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+            >
+              <a href="#about">About</a>
+            </li>
+            <li
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+            >
+              <a href="#skills">Skills</a>
+            </li>
+            <li
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+            >
+              <a href="#projects">Project</a>
+            </li>
+            <li
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+            >
+              <a href="#experience">Experience</a>
+            </li>
+            <li
+              class="hover:text-violet-600 transition-colors duration-500 ease-in-out cursor-pointer"
+            >
+              <a>Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dropdown lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <i class="fa-sharp fa-regular fa-bars text-xl"></i>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content right-0 bg-purple-700 rounded-box z-[1] mt-3 w-44 gap-4 px-2 py-3 shadow-lg"
+          >
+            <li class="text-white">
+              <a>Home</a>
+            </li>
+            <li class="text-white">
+              <a>Skill</a>
+            </li>
+            <li class="text-white">
+              <a>Project</a>
+            </li>
+            <li class="text-white">
+              <a>Experience</a>
+            </li>
+            <li class="text-white">
+              <a>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <header class="w-11/12 mx-auto" id="Home">
       <!-- Banner Section -->
-      <div
-        class="fixed bottom-4 right-2 border-2 rounded-lg backdrop:blur-3xl z-50"
-      >
-        <a href="#Home"
-          ><i class="fa-light fa-caret-up text-indigo-500 text-2xl px-2"></i
-        ></a>
-      </div>
-      <section class="grid lg:grid-cols-2 grid-cols-1 items-center md:pt-8">
+      <section class="grid lg:grid-cols-2 grid-cols-1 items-center">
         <!--Banner title  -->
         <div class="space-y-5 lg:pl-12 p-5">
-          <h2 class="lg:text-6xl md:text-5xl text-3xl font-[lora]">
-            I'm Al Amin Islam
-          </h2>
-          <h4 class="lg:text-2xl font-[lora]">and I'm a junior</h4>
-          <h1 class="lg:text-6xl md:text-5xl text-3xl font-bold font-[lora]">
-            Web Developer
-          </h1>
-          <p
-            class="text-[#494949] text-sm lg:w-10/12 tracking-widest font-medium"
-          >
-            My path to becoming a web developer is a long one, and I’m
-            constantly seeking to learn and explore new things.
-          </p>
+          <div class="flex flex-col-reverse lg:flex-col gap-6">
+            <div class="space-y-2 lg:space-y-4">
+              <h2
+                class="lg:text-6xl md:text-5xl text-3xl font-[Rufina] font-bold text-[#212121]"
+              >
+                I'm Al Amin Islam
+              </h2>
+              <h4 class="lg:text-2xl font-[Rufina] font-bold">
+                and I'm a junior
+              </h4>
+              <h1
+                class="lg:text-6xl md:text-5xl text-3xl font-[Rufina] font-bold text-[#212121]"
+              >
+                Web Developer
+              </h1>
+            </div>
+            <div>
+              <p class="text-[#494949] text-sm lg:w-10/12 tracking-widest">
+                My path to becoming a web developer is a long one, and I’m
+                constantly seeking to learn and explore new things.
+              </p>
+            </div>
+          </div>
           <button
-            class="transition-colors duration-300 ease-out bg-gradient-to-r to-[#fd85ff] from-[#8196ff] text-lg font-semibold py-3 px-8 rounded-full text-white"
+            class="bg-gradient-to-r to-[#fd85ff] from-[#8196ff] lg:text-lg text-base font-semibold py-3 px-8 rounded-full text-white"
           >
             <a href="" class="">Download CV</a>
           </button>
@@ -177,114 +189,155 @@
     </header>
     <br />
     <main>
+      <!-- Upper section -->
+      <div
+        class="fixed bottom-2 right-2 border-2 rounded-full backdrop:blur-3xl z-50 bg-[#c3a3e9]"
+      >
+        <a href="#Home"
+          ><i
+            class="fa-light fa-chevron-up fa-fade fa-sm text-2xl py-2 px-3"
+          ></i
+        ></a>
+      </div>
+      <!-- About Section -->
+      <section
+        class="grid lg:grid-cols-2 grid-cols-1 gap-6 w-11/12 mx-auto"
+        id="about"
+      >
+        <!-- Image  -->
+        <div class="mx-auto">
+          <img src="./image/Photolab-71900806-removebg-preview.png" alt="" />
+        </div>
+        <div class="space-y-8">
+          <h3 class="lg:text-5xl text-3xl text-[Rufina] font-semibold">
+            There Is All About Me
+          </h3>
+          <p class="text-zinc-500">
+            I’m a highly focused and hardworking individual, always driven to
+            improve and push boundaries. I thrive on challenges and constantly
+            seek opportunities to innovate. My passion lies in creating
+            something unique, and I’m committed to achieving excellence in
+            everything I do.
+          </p>
+          <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+            <div class="space-y-3">
+              <h4 class="text-Rufina lg:text-3xl text-2xl text-pink-500">
+                Name
+              </h4>
+              <h3 class="text-zinc-500 text-xl">MD Al Amin Islam</h3>
+            </div>
+            <div class="space-y-3">
+              <h4 class="text-Rufina lg:text-3xl text-2xl text-pink-500">
+                Email
+              </h4>
+              <h3 class="text-zinc-500 text-xl">alamin03040912@gmail.com</h3>
+            </div>
+            <div class="space-y-3">
+              <h4 class="text-Rufina lg:text-3xl text-2xl text-pink-500">
+                Phone
+              </h4>
+              <h3 class="text-zinc-500 text-xl">( +880 ) 1929671795</h3>
+            </div>
+            <div class="space-y-3">
+              <h4 class="text-Rufina lg:text-3xl text-2xl text-pink-500">
+                Instagram
+              </h4>
+              <h3 class="text-zinc-500 text-xl">mdalaminislam0412</h3>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Skills Section -->
+      <br /><br />
       <section class="w-11/12 mx-auto my-6" id="skills">
         <!-- Skill title -->
         <div class="flex flex-col justify-center my-6 items-center gap-4">
           <div class="flex justify-center items-center my-6">
-            <h3 class="text-center lg:text-4xl md:text-3xl text-2xl font-bold">
-              My Skills
+            <h3
+              class="lg:text-5xl text-3xl text-[Rufina] font-semibold text-center"
+            >
+              What I Do
             </h3>
             <img class="w-12" src="./asset/potential.png" alt="" />
           </div>
-          <p class="text-[#494949] lg:w-7/12 text-center mx-auto">
-            My diverse skill set in web development includes proficiency in
-            front-end and back-end technologies, problem-solving, and a strong
-            focus on user-centric design.
-          </p>
         </div>
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
           <!-- first card -->
           <div
-            class="space-y-2 hover:bg-[#faa37a] hover:text-black rounded-lg p-6 shadow border"
+            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
           >
-            <img src="./asset/html.png" alt="" />
-            <h3 class="md:text-2xl text-xl font-extrabold">HTML</h3>
+            <img class="mx-auto" src="./image/per_port_ser.jpg" alt="" />
+            <h3 class="md:text-3xl text-xl">Web Design</h3>
             <p class="text-[#494949]">
-              Proficient in crafting well-structured and semantic HTML5
-              documents, styling them with CSS3, and enhancing functionality
-              with JavaScript.
+              Web development involves designing, creating, and maintaining
+              websites. It combines coding, creativity, and user experience to
+              build functional, dynamic sites.
             </p>
-            <a href="" class="md:text-xl font-bold cursor-pointer text-center"
-              >Read More <i class="fa-regular fa-chevrons-right"></i
-            ></a>
           </div>
           <!-- second card -->
           <div
-            class="space-y-2 hover:bg-blue-400 hover:text-black rounded-lg p-6 shadow border"
+            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
           >
-            <img src="./asset/css.png" alt="" />
-            <h3 class="md:text-2xl text-xl font-extrabold">CSS</h3>
+            <img class="mx-auto" src="./image/pr_port_ser2.png" alt="" />
+            <h3 class="md:text-3xl text-xl">Photography</h3>
             <p class="text-[#494949]">
-              Proficient in crafting well-structured and semantic HTML5
-              documents, styling them with CSS3, and enhancing functionality
-              with JavaScript.
+              Web development involves designing, creating, and maintaining
+              websites. It combines coding, creativity, and user experience to
+              build functional, dynamic sites.
             </p>
-            <a href="" class="md:text-xl font-bold cursor-pointer text-center"
-              >Read More <i class="fa-regular fa-chevrons-right"></i
-            ></a>
           </div>
-          <!-- third card -->
+          <!-- card 3 -->
           <div
-            class="space-y-2 hover:bg-yellow-300 hover:text-black rounded-lg p-6 shadow border"
+            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
           >
-            <img src="./asset/js.png" alt="" />
-            <h3 class="md:text-2xl text-xl font-extrabold">JavaScript</h3>
+            <img class="mx-auto" src="./image/pr_port_ser3.png" alt="" />
+            <h3 class="md:text-3xl text-xl">Video Editing</h3>
             <p class="text-[#494949]">
-              Proficient in crafting well-structured and semantic HTML5
-              documents, styling them with CSS3, and enhancing functionality
-              with JavaScript.
+              Web development involves designing, creating, and maintaining
+              websites. It combines coding, creativity, and user experience to
+              build functional, dynamic sites.
             </p>
-            <a href="" class="md:text-xl font-bold cursor-pointer text-center"
-              >Read More <i class="fa-regular fa-chevrons-right"></i
-            ></a>
           </div>
-          <!-- fourth card -->
+          <!-- card 4 -->
           <div
-            class="space-y-2 hover:bg-blue-300 hover:text-black rounded-lg p-6 shadow border"
+            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
           >
-            <img class="w-12" src="./asset/react.png" alt="" />
-            <h3 class="md:text-2xl text-xl font-extrabold">React</h3>
+            <img class="mx-auto" src="./image/pr_port_ser5.png" alt="" />
+            <h3 class="md:text-3xl text-xl">Content Writing</h3>
             <p class="text-[#494949]">
-              Skilled in developing interactive and dynamic web applications
-              using React. Experienced with React's component-based
-              architecture,
+              Web development involves designing, creating, and maintaining
+              websites. It combines coding, creativity, and user experience to
+              build functional, dynamic sites.
             </p>
-            <a href="" class="md:text-xl font-bold cursor-pointer text-center"
-              >Read More <i class="fa-regular fa-chevrons-right"></i
-            ></a>
           </div>
-          <!-- fifth card -->
+          <!-- card 5 -->
           <div
-            class="space-y-2 hover:bg-[#4A7B58] hover:text-black rounded-lg p-6 shadow border"
+            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
           >
-            <img class="w-12" src="./asset/nodejs.png" alt="" />
-            <h3 class="md:text-2xl text-xl font-extrabold">Node.JS</h3>
+            <img class="mx-auto" src="./image/pr_port_ser6.png" alt="" />
+            <h3 class="md:text-3xl text-xl">Digital Marketing</h3>
             <p class="text-[#494949]">
-              Experienced in building scalable server-side applications with
-              Node.js. Skilled in creating and managing RESTful APIs,
+              Web development involves designing, creating, and maintaining
+              websites. It combines coding, creativity, and user experience to
+              build functional, dynamic sites.
             </p>
-            <a href="" class="md:text-xl font-bold cursor-pointer text-center"
-              >Read More <i class="fa-regular fa-chevrons-right"></i
-            ></a>
           </div>
-          <!-- sixth card -->
+          <!-- card 6 -->
           <div
-            class="space-y-2 hover:bg-green-500 hover:text-black rounded-lg p-6 shadow border"
+            class="space-y-2 text-center p-6 hover:border hover:border-pink-400"
           >
-            <img class="w-12 rounded-full" src="./asset/mongodb.png" alt="" />
-            <h3 class="md:text-2xl text-xl font-extrabold">MongoDB</h3>
+            <img class="mx-auto" src="./image/pr_port_ser4.png" alt="" />
+            <h3 class="md:text-3xl text-xl">Web Develop</h3>
             <p class="text-[#494949]">
-              MongoDB is a popular NoSQL database that provides a flexible,
-              scalable, and high-performance solution.
+              Web development involves designing, creating, and maintaining
+              websites. It combines coding, creativity, and user experience to
+              build functional, dynamic sites.
             </p>
-            <a href="" class="md:text-xl font-bold cursor-pointer text-center"
-              >Read More <i class="fa-regular fa-chevrons-right"></i
-            ></a>
           </div>
         </div>
       </section>
       <br />
+      <!--  -->
       <!-- My Projects Section -->
       <section class="w-11/12 mx-auto my-6" id="projects">
         <div>
