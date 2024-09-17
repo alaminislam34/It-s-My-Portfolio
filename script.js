@@ -7,32 +7,62 @@ document.getElementById("upIcon").addEventListener("click", function() {
         });
 });
 // navbar scroll function 
-document.getElementById('home-navbar').addEventListener('click', function(){
+document.getElementById('home-navbar', 'home-menu').addEventListener('click', function(){
     document.getElementById('home').scrollIntoView({
         behavior: "smooth"
     })
 })
-document.getElementById('home-logo').addEventListener('click', function(){
+document.getElementById('home-menu').addEventListener('click', function(){
     document.getElementById('home').scrollIntoView({
         behavior: "smooth"
     })
 })
-document.getElementById('about-navbar').addEventListener('click', function(){
+document.getElementById('home-logo', 'about-menu').addEventListener('click', function(){
+    document.getElementById('home').scrollIntoView({
+        behavior: "smooth"
+    })
+})
+document.getElementById('about-menu').addEventListener('click', function(){
+    document.getElementById('home').scrollIntoView({
+        behavior: "smooth"
+    })
+})
+document.getElementById('about-navbar', 'about-menu').addEventListener('click', function(){
     document.getElementById('about').scrollIntoView({
         behavior: "smooth"
     })
 })
-document.getElementById('skills-navbar').addEventListener('click', function(){
+document.getElementById('about-menu').addEventListener('click', function(){
+    document.getElementById('about').scrollIntoView({
+        behavior: "smooth"
+    })
+})
+document.getElementById('skills-navbar', 'skills-menu').addEventListener('click', function(){
     document.getElementById('skills').scrollIntoView({
         behavior: "smooth"
     })
 })
-document.getElementById('portfolio-navbar').addEventListener('click', function(){
+document.getElementById('skills-menu').addEventListener('click', function(){
+    document.getElementById('skills').scrollIntoView({
+        behavior: "smooth"
+    })
+})
+document.getElementById('portfolio-navbar', 'portfolio-menu').addEventListener('click', function(){
     document.getElementById('portfolio').scrollIntoView({
         behavior: "smooth"
     })
 })
-document.getElementById('contact-navbar').addEventListener('click', function(){
+document.getElementById('portfolio-menu').addEventListener('click', function(){
+    document.getElementById('portfolio').scrollIntoView({
+        behavior: "smooth"
+    })
+})
+document.getElementById('contact-navbar', 'contact-menu').addEventListener('click', function(){
+    document.getElementById('contact').scrollIntoView({
+        behavior: "smooth"
+    })
+})
+document.getElementById('contact-menu').addEventListener('click', function(){
     document.getElementById('contact').scrollIntoView({
         behavior: "smooth"
     })
