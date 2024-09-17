@@ -2,7 +2,7 @@
 // upIcon scroll function
 
 document.getElementById("upIcon").addEventListener("click", function() {
-        document.getElementById("Home").scrollIntoView({
+        document.getElementById("home").scrollIntoView({
             behavior: 'smooth'
         });
 });
