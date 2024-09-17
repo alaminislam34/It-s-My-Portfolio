@@ -86,29 +86,13 @@ window.addEventListener('scroll', function(){
     const navbar = document.getElementById('navbar');
     if(this.window.scrollY > 80){
         navbar.classList.add('sticky');
-        navbar.classList.add('bg-[#ddb4e4]');
+        navbar.classList.add('bg-[#1d232a]');
+        navbar.classList.add('opacity-90');
         navbar.classList.add('shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]');
     }
     else{
         navbar.classList.remove('sticky');
-        navbar.classList.remove('bg-[#ddb4e4]');
+        navbar.classList.remove('bg-[#1d232a]');
         navbar.classList.remove('shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]');
     }
 })
-
-const toggleButton = document.getElementById('mode-toggle');
-const body = document.getElementById('body');
-
-// script.js
-
-document.getElementById('dark').addEventListener('click', function() {
-    // XMLHttpRequest ব্যবহার করে অন্য HTML ফাইল লোড করা
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'dark.html', true);
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById('light').innerHTML = xhr.responseText;
-        }
-    };
-    xhr.send();
-});
