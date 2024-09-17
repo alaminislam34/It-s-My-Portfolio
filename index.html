@@ -78,11 +78,11 @@
       };
     </script>
   </head>
-  <body class="font-inter">
+  <body class="font-inter" id="home">
     <nav class="sticky top-0 z-[120] py-1" id="navbar">
       <div class="navbar w-11/12 mx-auto">
         <div class="flex-1">
-          <a href="#Home"
+          <a id="home-logo"
             ><img class="h-12" src="./asset/mylogo.png" alt=""
           /></a>
         </div>
@@ -91,7 +91,7 @@
             <li
               class="text-[#313131] hover:text-[#111111] transition-colors duration-500 ease-in-out cursor-pointer font-semibold group relative w-max"
             >
-              <a href="#Home" class="px-2">Home</a>
+              <a id="home-navbar" class="px-2">Home</a>
               <span
                 class="absolute -bottom-1 left-0 w-0 transition-all ease-in-out duration-300 h-0.5 bg-[#EE476F] group-hover:w-full"
               ></span>
@@ -99,7 +99,7 @@
             <li
               class="text-[#313131] hover:text-[#111111] transition-colors duration-500 ease-in-out cursor-pointer font-semibold group relative w-max"
             >
-              <a href="#about" class="px-2">About</a>
+              <a id="about-navbar" class="px-2">About</a>
               <span
                 class="absolute -bottom-1 left-0 w-0 transition-all ease-in-out duration-300 h-0.5 bg-[#EE476F] group-hover:w-full"
               ></span>
@@ -107,7 +107,7 @@
             <li
               class="text-[#313131] hover:text-[#111111] transition-colors duration-500 ease-in-out cursor-pointer font-semibold group relative w-max"
             >
-              <a href="#skills" class="px-2">Skills</a>
+              <a id="skills-navbar" class="px-2">Skills</a>
               <span
                 class="absolute -bottom-1 left-0 w-0 transition-all ease-in-out duration-300 h-0.5 bg-[#EE476F] group-hover:w-full"
               ></span>
@@ -115,7 +115,7 @@
             <li
               class="text-[#313131] hover:text-[#111111] transition-colors duration-500 ease-in-out cursor-pointer font-semibold group relative w-max"
             >
-              <a href="#portfolio" class="px-2">Portfolio</a>
+              <a id="portfolio-navbar" class="px-2">Portfolio</a>
               <span
                 class="absolute -bottom-1 left-0 w-0 transition-all ease-in-out duration-300 h-0.5 bg-[#EE476F] group-hover:w-full"
               ></span>
@@ -123,7 +123,7 @@
             <li
               class="text-[#313131] hover:text-[#111111] transition-colors duration-500 ease-in-out cursor-pointer font-semibold group relative w-max"
             >
-              <a href="#contact" class="px-2">Contact</a>
+              <a id="contact-navbar" class="px-2">Contact</a>
               <span
                 class="absolute -bottom-1 left-0 w-0 transition-all ease-in-out duration-300 h-0.5 bg-[#EE476F] group-hover:w-full"
               ></span>
@@ -140,19 +140,19 @@
             class="menu menu-sm dropdown-content sm:-right-8 -right-4 bg-[#c762f7] z-[1] mt-3 w-44 gap-4 p-4 shadow-lg"
           >
             <li class="text-white">
-              <a href="#Home">Home</a>
+              <a id="home-navbar">Home</a>
             </li>
             <li class="text-white">
-              <a href="#about">About</a>
+              <a id="about-navbar">About</a>
             </li>
             <li class="text-white">
-              <a href="#skills">Skill</a>
+              <a id="skills-navbar">Skill</a>
             </li>
             <li class="text-white">
-              <a href="#portfolio">Portfolio</a>
+              <a id="portfolio-navbar">Portfolio</a>
             </li>
             <li class="text-white">
-              <a href="#contact">Contact</a>
+              <a id="contact-navbar">Contact</a>
             </li>
           </ul>
         </div>
@@ -597,22 +597,22 @@
             <img class="w-12" src="./asset/mylogo.png" alt="" />
             <ul class="flex gap-8 text-white text-2xl items-center">
               <li
-                class="py-1.5 hover:text-black px-2.5 rounded-full hover:bg-white/40"
+                class="py-1.5 hover:text-white text-gray-300 hover:shadow-[0_5px_25px_#5D0093] px-[11px] rounded-full hover:bg-gray-800 hover:scale-110 overflow-hidden transition-all ease-in-out delay-75"
               >
                 <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
               </li>
               <li
-                class="py-1.5 hover:text-black px-2.5 rounded-full hover:bg-white/40"
+                class="py-1.5 hover:text-white text-gray-300 hover:shadow-[0_5px_25px_#5D0093] px-[11px] rounded-full hover:bg-gray-800 hover:scale-110 overflow-hidden transition-all ease-in-out delay-75"
               >
                 <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
               </li>
               <li
-                class="py-1.5 hover:text-black px-2.5 rounded-full hover:bg-white/40"
+                class="py-1.5 hover:text-white text-gray-300 hover:shadow-[0_5px_25px_#5D0093] px-[11px] rounded-full hover:bg-gray-800 hover:scale-110 overflow-hidden transition-all ease-in-out delay-75"
               >
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
               </li>
               <li
-                class="py-1.5 hover:text-black px-2.5 rounded-full hover:bg-white/40"
+                class="py-1.5 hover:text-white text-gray-300 hover:shadow-[0_5px_25px_#5D0093] px-[11px] rounded-full hover:bg-gray-800 hover:scale-110 overflow-hidden transition-all ease-in-out delay-75"
               >
                 <a href="#"><i class="fa-brands fa-square-github"></i></a>
               </li>
