@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MD Al Amin Islam</title>
+    <link rel="icon" href="./asset/favicon.ico" type="image/x-icon" />
     <!-- Tailwind CSS and DaisyUi cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -78,8 +79,8 @@
     </script>
   </head>
   <body class="font-inter">
-    <nav class="sticky top-0 z-[120] bg-[#E3AADD] py-1">
-      <div class="navbar bg-base-100 w-11/12 mx-auto bg-[#E3AADD]">
+    <nav class="sticky top-0 z-[120] py-1" id="navbar">
+      <div class="navbar w-11/12 mx-auto">
         <div class="flex-1">
           <a href="#Home"
             ><img class="h-12" src="./asset/mylogo.png" alt=""
@@ -172,11 +173,13 @@
               <h4 class="lg:text-2xl font-[Rufina] font-bold">
                 and I'm a junior
               </h4>
-              <h1
-                class="lg:text-6xl md:text-5xl text-4xl font-[Rufina] font-bold text-[#212121]"
-              >
-                Web Developer
-              </h1>
+              <div class="">
+                <h1
+                  class="lg:text-6xl md:text-5xl text-4xl font-[Rufina] font-bold text-[#212121]"
+                >
+                  Web Developer
+                </h1>
+              </div>
             </div>
             <div>
               <p
@@ -195,7 +198,9 @@
         </div>
         <!-- Banner image -->
         <div class="mx-auto">
-          <img class="bottom-0" src="./image/image.png" alt="MY Image" />
+          <div>
+            <img src="./image/Developer activity-bro.png" alt="" />
+          </div>
         </div>
       </section>
     </header>
@@ -205,7 +210,7 @@
       <div
         class="fixed bottom-2 right-2 border-2 rounded-full backdrop:blur-3xl z-50 bg-[#c3a3e9]"
       >
-        <a href="#Home"
+        <a id="upIcon"
           ><i
             class="fa-light fa-chevron-up fa-fade fa-sm text-2xl py-2 px-3"
           ></i
@@ -213,14 +218,11 @@
       </div>
       <!-- About Section -->
       <section
-        class="grid lg:grid-cols-2 grid-cols-1 gap-6 w-11/12 mx-auto"
+        class="grid lg:grid-cols-2 grid-cols-1 w-11/12 mx-auto"
         id="about"
       >
-        <!-- Image  -->
-        <div class="mx-auto">
-          <img src="./image/Photolab-71900806-removebg-preview.png" alt="" />
-        </div>
-        <div class="space-y-8 py-6">
+        <!-- about title -->
+        <div class="lg:space-y-8 space-y-4 py-6">
           <h3 class="lg:text-5xl text-3xl text-[Rufina] font-semibold">
             There Is All About Me
           </h3>
@@ -257,6 +259,10 @@
               <h3 class="text-zinc-500 text-xl">mdalaminislam0412</h3>
             </div>
           </div>
+        </div>
+        <!-- Image  -->
+        <div class="mx-auto">
+          <img src="./image/Photolab-71900806-removebg-preview.png" alt="" />
         </div>
       </section>
       <!-- Skills Section -->
@@ -379,7 +385,7 @@
                     >Your name
                     <input
                       placeholder="Name"
-                      class="p-2 rounded-lg outline-pink-300 mt-1"
+                      class="p-2 rounded-lg outline-pink-300 mt-1 text-black"
                       type="text"
                     />
                   </label>
@@ -387,7 +393,7 @@
                     >Your Email
                     <input
                       placeholder="Email"
-                      class="p-2 rounded-lg outline-pink-300 mt-1"
+                      class="p-2 rounded-lg outline-pink-300 mt-1 text-black"
                       type="email"
                     />
                   </label>
@@ -565,6 +571,7 @@
             />
             <textarea
               name="text"
+              rows="6"
               class="text-black p-4 lg:col-span-2 outline-Accent rounded-lg"
               placeholder="Let me know your opinion..."
             ></textarea>
@@ -587,16 +594,24 @@
           <div class="flex items-center justify-between">
             <img class="w-12" src="./asset/mylogo.png" alt="" />
             <ul class="flex gap-8 text-white text-2xl items-center">
-              <li class="">
+              <li
+                class="py-1.5 hover:text-black px-2.5 rounded-full hover:bg-white/40"
+              >
                 <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
               </li>
-              <li class="">
+              <li
+                class="py-1.5 hover:text-black px-2.5 rounded-full hover:bg-white/40"
+              >
                 <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
               </li>
-              <li class="">
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <li
+                class="py-1.5 hover:text-black px-2.5 rounded-full hover:bg-white/40"
+              >
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
               </li>
-              <li class="">
+              <li
+                class="py-1.5 hover:text-black px-2.5 rounded-full hover:bg-white/40"
+              >
                 <a href="#"><i class="fa-brands fa-square-github"></i></a>
               </li>
             </ul>
@@ -611,6 +626,6 @@
       </div>
       <br /><br />
     </footer>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
