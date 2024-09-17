@@ -5,6 +5,8 @@ document.getElementById("upIcon").addEventListener("click", function() {
             behavior: 'smooth'  // Smooth scrolling effect
         });
     });
+document.getElementById('')
+
 
  const homeSection = document.getElementById('Home');
     const homeIcon = document.getElementById('upIcon');
@@ -21,12 +23,14 @@ document.getElementById("upIcon").addEventListener("click", function() {
 
 window.addEventListener('scroll', function(){
     const navbar = document.getElementById('navbar');
-    if(this.window.scrollY > 100){
+    if(this.window.scrollY > 80){
         navbar.classList.add('sticky');
-        navbar.classList.add('bg-[#d38aff]')
+        navbar.classList.add('bg-[#ddb4e4]');
+        navbar.classList.add('shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]');
     }
     else{
         navbar.classList.remove('sticky');
-        navbar.classList.remove('bg-[#d38aff]')
+        navbar.classList.remove('bg-[#ddb4e4]');
+        navbar.classList.remove('shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]');
     }
 })
